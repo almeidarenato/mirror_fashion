@@ -194,3 +194,29 @@ footer .container {
     /*imagem replacement */
     text-indent: -9999px;
 }
+
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+
+.menu-opcoes a:active {
+    color: #867dc6;
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before {
+    content: '\272A'; 
+    padding-right: 5px;
+    opacity: 0.4;
+}

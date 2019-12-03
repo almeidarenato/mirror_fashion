@@ -97,3 +97,15 @@ header{
     bottom: 0;
     right: 0;
 }
+
+p::first-letter {
+    font-weight: bold;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+:not(p) + p::first-line {
+    font-variant: small-caps;
+}
