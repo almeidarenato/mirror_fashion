@@ -295,7 +295,50 @@ footer .container {
     .painel li {
         width: 30%;
     }
+
     .painel img{
         width: 100%;
+    }
+
+    @media (min-width: 480px) {
+        header h1 {
+            margin: 5px 0;
+        }
+
+        .menu-departamentos {
+            padding-bottom: 10px; 
+            margin-bottom: 10px;
+        }
+
+        .menu-departamentos nav > ul {
+            column-count: 2;
+        }
+    }
+    
+    @media (min-width: 720px) {
+        header h1 {
+            text-align: left;
+        }
+        
+        .menu-opcoes {
+            position: absolute;
+        }
+
+        .sacola {
+            display: block;
+        }
+
+        .painel li {
+            width: 15px;
+        }
+
+        .busca,
+        .menu-departamentos nav > ul {
+            column-count: 1;
+        }
+        
+        .banner-destaques img {
+            width: 69%;
+        }
     }
 }
