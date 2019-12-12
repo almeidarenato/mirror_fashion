@@ -18,6 +18,7 @@
 
 .menu-opcoes ul li{
     display: inline;
+    margin: 28px;
 }
 
 .sacola{
@@ -46,7 +47,8 @@ header{
     bottom: 0;
     right: 0;
     border-radius: 15px;
-    background-color: #C6C5C5;
+    background-color: rgb(241, 241, 241);
+    padding: 15px;
 }
 
 .busca, 
@@ -314,7 +316,7 @@ footer .container {
             column-count: 2;
         }
     }
-    
+
     @media (min-width: 720px) {
         header h1 {
             text-align: left;

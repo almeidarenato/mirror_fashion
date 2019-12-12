@@ -1,0 +1,57 @@
+.cores label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 50%;
+    height: 50px;
+}
+
+.cores label[for=verde]::after {
+    background-color: #33cc66;
+}
+
+.cores label[for=rosa]::after {
+    background-color: #ff6666;
+}
+
+.cores label[for=azul]::after {
+    background-color: #6666ff;
+}
+
+.cores input:checked + label::after {
+    border: 6px solid rgba(0, 0, 0, 0.3)
+}
+
+.cores label::after {
+    box-sizing: border-box;
+}
+
+.cores input[type=radio] {
+    display: none;  
+}
+
+.cores input:not(:checked) + label img {
+    display: none;
+}
+
+.cores label::after {
+    position: absolute;
+    top: 30px;
+}
+
+.cores {
+    position: relative;
+    padding-top: 90px;
+}
+
+.cores label[for=verde]::after {
+    left: 0;
+}
+
+.cores label[for=rosa]::after {
+    left: 60px;
+}
+
+.cores label[for=azul]::after {
+    left: 120px;
+}
