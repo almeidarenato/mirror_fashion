@@ -1,5 +1,5 @@
-.cores label:after {
-    content: '';
+.cores label::after {
+    content: "";
     display: block;
     border-radius: 50%;
     width: 50px;
@@ -46,7 +46,7 @@
     left: 0;
 }
 
-..cores label[for=rosa]::after {
+.cores label[for=rosa]::after {
     left: 60px;
 }
 
@@ -112,11 +112,14 @@
 }
 
 .tamanhos output {
-    width: 60px;
-    height: 60px;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 3px solid #666;
     border-radius: 50%;
-    border: 1px solid black;
-    padding: 10px;
+    color: #555;
 }
 
 
@@ -129,6 +132,10 @@
     .cores {
         position: static;
         padding: 0;
+    }
+
+    .cores legend {
+        position: static;
     }
 
     .cores label img {
@@ -155,11 +162,11 @@
         margin-right: 10px;
     }
 
-    fieldset {
+    .produto fieldset {
         display: inline-block;
         vertical-align: top;
         margin: 1em 0;
-        min-width: 200px;
+        min-width: 240px;
         width: 45%;
     }
 }
