@@ -110,6 +110,10 @@
 .comprar {
     cursor: pointer;
 }
+.textBuy {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
 
 .tamanhos output {
     display: inline-block;
