@@ -6,7 +6,8 @@
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width">
 
-    	<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/total.js"></script>
     	<style>
 			.form-control:invalid {
 				border: 1px solid #cc0000;
@@ -49,7 +50,7 @@
 						<div class="panel-heading">
 							<h2 class="panel-title">Sua compra</h2>
 						</div>
-						
+
 						<div class="card mb-3">
 							<div class="card-body">
 						   
@@ -60,7 +61,7 @@
 						   
 							  <div class="form-group">
 								<label for="total">Total:</label>
-								<output for="qtd preco" id="total" class="form-control">R$ 48,95</output>
+								<output for="qtd preco" id="total" class="form-control">R$ 129,90</output>
 							  </div>
 						   
 							</div>
@@ -73,7 +74,7 @@
 								<dd>Fuzzy Cardigan</dd>
 								
 								<dt>Preço</dt>
-								<dd>129,90</dd>
+								<dd id="preco">129,90</dd>
 								
 								<dt>Cor</dt>
 								<dd>Verde</dd>
@@ -107,7 +108,7 @@
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" value="sim" name="spam" checked>
-                                        Quero receber spam da Mirror Fashion
+                                        Quero receber NewsLetter da Mirror Fashion
                                     </label>
                                 </div>
                             </fieldset>
