@@ -13,7 +13,8 @@
 }
 
 .menu-opcoes a{
-    color: #003366;
+    color: #7e7e7e; 
+    text-decoration: none;  
 }
 
 .menu-opcoes ul li{
@@ -47,8 +48,6 @@ header{
     bottom: 0;
     right: 0;
     border-radius: 15px;
-    background-color: rgb(241, 241, 241);
-    padding: 15px;
 }
 
 .busca, 
