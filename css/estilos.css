@@ -24,6 +24,7 @@
 
 .sacola{
     padding-top: 8px;
+    padding-bottom: 4px;
     position: absolute;
     top: 0;
     right: 0;
@@ -31,7 +32,7 @@
 
 body{
     color: #333333;
-    font-family: "Lucida	Sans	Unicode",	"Lucida	Grande",	sans-serif;
+    font-family: 'PT Sans',	sans-serif;
 }
 
 .container {
@@ -72,7 +73,7 @@ header{
 }
 
 .menu-departamentos a{
-    color: #333333;
+    color: #747474;
     text-decoration: none;
 }
 
@@ -129,6 +130,7 @@ header{
 
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+    font-family: 'Bad Script', sans-serif;
 
 }
 
@@ -281,6 +283,65 @@ footer .container {
     border-top: 15px solid transparent;
 }
 
+.painel li:nth-child(n+7) {
+    display: none;
+}
+
+.painel-aberto :nth-child(n+7) {
+    display: inline-block;
+}
+
+painel button {
+    /* posicionamento */
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+    /* estilo */
+    background-color: #333;
+    border: 0;  
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 1px 0 1px black;
+    /* animação */
+    transition: 0.3s;
+}
+
+.painel button:hover {
+    background-color: #393939;
+    box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
+}
+
+.painel button {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.painel button::after {
+    /* elemento vazio */
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    /* triângulo */
+    border-top: 10px solid #333333;
+    border-left: 10px solid transparent;    
+    border-right: 10px solid transparent;
+    /* posicionamento */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    /* animação */
+    transition: 0.3s;
+}
+
+.painel button:hover::after {
+    border-top-color: #393939;
+}
+
 @media (max-width: 939px) {
     .container {
         width: 96%;
@@ -309,7 +370,7 @@ footer .container {
     }
     
     .busca,
-    .menu-opcoes,
+    .menu-opcoes, 
     .banner-destaques img {
         margin-right: 0;
         width: 100%;	
@@ -325,6 +386,10 @@ footer .container {
 
     .painel img{
         width: 100%;
+    }
+
+    .pause {
+        display: none;
     }
 
     @media (min-width: 480px) {

@@ -5,18 +5,22 @@ body{
     margin-right: auto;
     width: 940px;
 }
+
 h1{
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;  
 }
+
 h2{
     border-bottom: 2px solid #333333;
     padding-top: 30px;
 }
+
 p{
     padding: 0 45px;
     text-indent: 15px;
 }
+
 figure{
     background-color: #F2EDED;
     border: 2px	solid	#ccc;
@@ -35,7 +39,6 @@ figcaption{
     margin-right: auto;
     width: 550px;
 }
-
 
 #rodape{
     color: #777;
@@ -68,17 +71,18 @@ figcaption{
 }
 
 .menu-opcoes a{
-    color: #003366;
+    color: #7e7e7e; 
     text-decoration: none;
 }
 
 .menu-opcoes ul li{
     display: inline;
-    margin: 20px;
+    margin: 28px;
 }
 
 .sacola{
     padding-top: 8px;
+    padding-bottom: 4px;
     position: absolute;
     top: 0;
     right: 0;
@@ -97,6 +101,7 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
+    border-radius: 15px;
 }
 
 p::first-letter {
@@ -109,4 +114,15 @@ h1 + p {
 
 :not(p) + p::first-line {
     font-variant: small-caps;
+}
+
+.google-maps {
+    float: center;
+    width: 100%;
+    margin: auto;
+
+}
+
+.youtube {
+    width: 100%;
 }

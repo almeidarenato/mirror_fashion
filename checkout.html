@@ -101,7 +101,7 @@
     
                                 <div class="form-group">
                                     <label for="cpf">CPF</label>
-                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" data-mask="999.999.999-99" required>
                                 </div>
     
                                 <div class="checkbox">
@@ -131,7 +131,7 @@
     
                                 <div class="form-group">
                                     <label for="validade-cartao">Validade</label>
-                                    <input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+                                    <input type="month" class="form-control" id="validade-cartao" name="validade-cartao" data-mask="9999 9999 9999 9999 - 999">
                                 </div>
                             </fieldset>
                         </div>
@@ -148,5 +148,6 @@
         <script type="javascript" src="js/jquery.js"></script>
 		<script type="javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/total.js"></script> 
+		<script type="text/javascript" src="js/inputmask-plugin.js"></script>
     </body>
 </html>
