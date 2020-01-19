@@ -12,4 +12,6 @@
 [ x ] JQuery
 [ x ] SQL
 
-### Acessível em Mobile e Desktop
+### Acessibilidade do Site:
+
+Mobile e Desktop 
