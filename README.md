@@ -1,6 +1,6 @@
 # Mirror Fashion
 
-## [Curso WD-43](https://www.caelum.com.br/curso-html-css-javascript>)
+## [Curso WD-43](https://www.caelum.com.br/curso-html-css-javascript/)
 
 
 ### Utilizadas tecnologias
@@ -12,6 +12,6 @@
 * JQuery
 * SQL
 
-### Acessibilidade do Site
+### Acessibilidade
 
 Mobile e Desktop 
