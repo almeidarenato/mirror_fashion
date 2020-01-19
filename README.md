@@ -4,11 +4,12 @@
 
 
 ### Utilizadas tecnologias:
-[x] HMTL5
-[x] CSS3
-[x] JavaScript
-[x] Bootstrap 
-[x] JQuery
-[x] SQL
 
-###Acessível em Mobile e Desktop
+[ x ] HMTL5
+[ x ] CSS3
+[ x ] JavaScript
+[ x ] Bootstrap 
+[ x ] JQuery
+[ x ] SQL
+
+### Acessível em Mobile e Desktop
