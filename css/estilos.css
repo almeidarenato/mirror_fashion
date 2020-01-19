@@ -1,4 +1,4 @@
-.sacola{
+.sacola {
     background-image: url(/img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -8,21 +8,21 @@
     width: 140px;
 }
 
-.menu-opcoes ul{
+.menu-opcoes ul {
     font-size: 15px;
 }
 
-.menu-opcoes a{
+.menu-opcoes a {
     color: #7e7e7e; 
     text-decoration: none; 
 }
 
-.menu-opcoes ul li{
+.menu-opcoes ul li {
     display: inline;
     margin: 28px;
 }
 
-.sacola{
+.sacola {
     padding-top: 8px;
     padding-bottom: 4px;
     position: absolute;
@@ -30,9 +30,9 @@
     right: 0;
 }
 
-body{
+body {
     color: #333333;
-    font-family: 'PT Sans',	sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
 }
 
 .container {
@@ -40,11 +40,11 @@ body{
     width: 940px;
 }
 
-header{
+header {
     position: relative;
 }
 
-.menu-opcoes{
+.menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -52,7 +52,7 @@ header{
 }
 
 .busca, 
-.menu-departamentos{
+.menu-departamentos {
     background-color: #dcdcdc;
     font-weight: bold;
     text-transform: uppercase;
@@ -62,18 +62,18 @@ header{
 
 .busca h2, 
 .busca form,
-.menu-departamentos h2{
+.menu-departamentos h2 {
     margin: 10px;
 }
 
-.menu-departamentos li{
+.menu-departamentos li {
     background-color: white;
     margin-bottom:1px;
     padding: 5px 10px;
 }
 
-.menu-departamentos a{
-    color: #747474;
+.menu-departamentos a {
+    color: #747474; 
     text-decoration: none;
 }
 
@@ -82,18 +82,18 @@ header{
 }
 
 .busca, 
-.menu-departamentos{
+.menu-departamentos {
     float: left;
 }
-.menu-departamentos{
+.menu-departamentos {
     clear: left
 }
 
-.destaque{
+.destaque {
     margin-top: 10px;
 }
 
-.menu-departamentos{
+.menu-departamentos {
     margin-top: 10px;
     padding-bottom: 10px;
 }
@@ -236,15 +236,16 @@ footer .container {
     box-shadow: 0 0 5px #333;
     transition: box-shadow 0.7;
     transition: 0.7s ease-in;
-    transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2);
 }
 
 .painel li:nth-child(2n):hover {
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2);
 }
 
 .painel li {
     transition: 0.7s ease-out;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .busca {
@@ -287,11 +288,11 @@ footer .container {
     display: none;
 }
 
-.painel-aberto::nth-child(n+7) {
+.painel-aberto li:nth-child(n+7) {
     display: inline-block;
 }
 
-painel button {
+.painel button {
     /* posicionamento */
     float: right;
     margin-right: 10px;
