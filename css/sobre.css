@@ -1,4 +1,4 @@
-body{
+body {
     color: #333333;
     font-family: ' Lucida	Sans	Unicode",	"Lucida	Grande",	sans-serif;';
     margin-left: auto;
@@ -6,22 +6,22 @@ body{
     width: 940px;
 }
 
-h1{
+h1 {
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;  
 }
 
-h2{
+h2 {
     border-bottom: 2px solid #333333;
     padding-top: 30px;
 }
 
-p{
+p {
     padding: 0 45px;
     text-indent: 15px;
 }
 
-figure{
+figure {
     background-color: #F2EDED;
     border: 2px	solid	#ccc;
     text-align:	center;
@@ -29,7 +29,7 @@ figure{
     margin: 30px;
 }
 
-figcaption{
+figcaption {
     font-style:	italic;
     margin-top: 10px;
 }
@@ -40,23 +40,23 @@ figcaption{
     width: 550px;
 }
 
-#rodape{
+#rodape {
     color: #777;
     margin: 30px 0;
     padding: 30px 0;
 }
 
-#rodape img{
+#rodape img {
     margin-right: 30px;
     vertical-align: middle;
     width: 94px;
 }
 
-#familia-pelho{
+#familia-pelho {
     float: right;
     margin: 0 0 10px 10px;
 }
-.sacola{
+.sacola {
     background-image: url(/img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -66,21 +66,21 @@ figcaption{
     width: 140px;
 }
 
-.menu-opcoes ul{
+.menu-opcoes ul {
     font-size: 15px;
 }
 
-.menu-opcoes a{
+.menu-opcoes a {
     color: #7e7e7e; 
     text-decoration: none;
 }
 
-.menu-opcoes ul li{
+.menu-opcoes ul li {
     display: inline;
     margin: 28px;
 }
 
-.sacola{
+.sacola {
     padding-top: 8px;
     padding-bottom: 4px;
     position: absolute;
@@ -93,11 +93,11 @@ figcaption{
     width: 940px;
 }
 
-header{
+header {
     position: relative;
 }
 
-.menu-opcoes{
+.menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -125,4 +125,10 @@ h1 + p {
 
 .youtube {
     width: 100%;
+}
+
+@media (max-width: 939px) {
+    p {
+        text-align: center;
+    }
 }
