@@ -3,7 +3,7 @@
 ## [Curso WD-43](https://www.caelum.com.br/curso-html-css-javascript/)
 
 
-### Utilizadas tecnologias
+### Tecnologias utilizadas
 
 * HMTL5
 * CSS3
@@ -15,3 +15,6 @@
 ### Acessibilidade
 
 Mobile e Desktop 
+
+### Screenshots
+
