@@ -126,9 +126,3 @@ h1 + p {
 .youtube {
     width: 100%;
 }
-
-@media (max-width: 939px) {
-    p {
-        text-align: center;
-    }
-}
