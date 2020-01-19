@@ -5,12 +5,12 @@
 
 ### Utilizadas tecnologias:
 
-[ x ] HMTL5
-[ x ] CSS3
-[ x ] JavaScript
-[ x ] Bootstrap 
-[ x ] JQuery
-[ x ] SQL
+* HMTL5
+* CSS3
+* JavaScript
+* Bootstrap 
+* JQuery
+* SQL
 
 ### Acessibilidade do Site:
 
