@@ -14,4 +14,4 @@
 </p>
 <h2>Acessibilidade</h2>
 <p>:iphone: Mobile e :computer: Desktop</p> 
-<p>View do site Mirror Fashion<a href="https://fariasmateuss.github.io/mirror_fashion/index">aqui.</a></p>
+<p>View do site Mirror Fashion<a href="https://fariasmateuss.github.io/mirror_fashion/index"> aqui.</a></p>
