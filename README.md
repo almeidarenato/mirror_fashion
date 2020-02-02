@@ -4,12 +4,12 @@
 <h2>Tecnologias utilizadas</h2>
 <p>
 
-[x] HMTL5
-[x] CSS3
-[x] JavaScript
-[x] Bootstrap 
-[x] JQuery
-[x] SQL
+# [checkbox:checked] HMTL5
+# [checkbox:checked] CSS3
+# [checkbox:checked] JavaScript
+# [checkbox:checked] Bootstrap 
+# [checkbox:checked] JQuery
+# [checkbox:checked] SQL
 
 </p>
 <h2>Acessibilidade</h2>
