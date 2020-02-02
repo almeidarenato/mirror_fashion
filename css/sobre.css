@@ -80,6 +80,7 @@ figcaption {
 .menu-opcoes ul li {
     display: inline;
     margin: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .sacola {
