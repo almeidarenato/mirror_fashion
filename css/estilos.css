@@ -234,13 +234,13 @@ footer .container {
 .painel li:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 5px #333;
-    transition: box-shadow 0.7;
+    /* transition: box-shadow 0.7;
     transition: 0.7s ease-in;
-    transform: scale(1.2);
+    transform: scale(1.2); */
 }
 
 .painel li:nth-child(2n):hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 .painel li {
@@ -343,6 +343,29 @@ footer .container {
     border-top-color: #393939;
 }
 
+/* .adic-favo {
+    top: 10px;
+    left: 10px;
+    z-index: 30;
+    text-decoration: none;
+    color: #c4c4c4;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.adic-favo:before {
+    content: "\f004";
+    font-family: FontAwesome;
+    font-size: 1.2em;
+}
+
+.adic-favo:active,
+.adic-favo:focus,
+.adic-favo:hover {
+    color: #262626;
+    text-decoration: none;
+} */
+
 @media (max-width: 939px) {
     .container {
         width: 96%;
@@ -370,7 +393,11 @@ footer .container {
         margin: 5px;
     }
     
-    .busca,
+    .menu-departamentos,
+    .busca {
+        display: none;
+    }
+
     .menu-opcoes, 
     .banner-destaques img {
         margin-right: 0;
