@@ -17,6 +17,8 @@
   </a>
 </h3>
 
+View do site Mirror Fashion <a href="https://fariasmateuss.github.io/mirror_fashion/"> aqui.</a>
+
 ## Motivação
 
 Meu primeiro projeto, com proposito de desenvolver o Front End E-Commerce.
@@ -26,4 +28,3 @@ Meu primeiro projeto, com proposito de desenvolver o Front End E-Commerce.
 
 :iphone: Mobile e :computer: Desktop
 
-View do site Mirror Fashion <a href="https://fariasmateuss.github.io/mirror_fashion/"> aqui.</a>
