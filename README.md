@@ -6,6 +6,7 @@
     <a href="#Motivação">Motivação</a> &bull;
     <a href="#Acessibilidade">Acessibilidade</a> &bull;
 </p>
+
 -------
 
 ## Aparência
