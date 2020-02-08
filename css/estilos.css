@@ -255,7 +255,7 @@ footer .container {
 .destaque {
     position: relative;
 }
-
+/* 
 .pause,
 .play {
     display: block;
@@ -275,7 +275,7 @@ footer .container {
     border-left: 25px solid #990000;
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
-}
+} */
 
 .painel li:nth-child(n+7) {
     display: none;
