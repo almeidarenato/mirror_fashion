@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    background-image: url(../img/sobre-background.jpg);
+    background-image: url(..img/sobre-background.jpg);
     padding: 10px;  
 }
 
@@ -34,7 +34,7 @@ figcaption {
     margin-top: 10px;
 }
 
-#centro-distribuicao{
+.centro-distribuicao{
     margin-left: auto;
     margin-right: auto;
     width: 550px;
@@ -52,13 +52,13 @@ footer img {
     width: 94px;
 }
 
-#familia-pelho {
+.familia-pelho {
     float: right;
     margin: 0 0 10px 10px;
 }
 
 .sacola {
-    background-image: url(/img/sacola.png);
+    background-image: url(img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
     font-size: 14px;
