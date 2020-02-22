@@ -6,14 +6,11 @@ body {
 .container {
     margin: 0 auto;
     width: 940px;
-}
-
-header {
     position: relative;
 }
 
 .sacola {
-    background-image: url(img/sacola.png);
+    background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
     font-size: 14px;
@@ -32,14 +29,6 @@ header {
     margin-right: 0;
     width: 100%;
 
-    &:hover {
-        color: #007dc6;
-
-        &:active {
-            color: #867dc6;
-        }
-    }
-
     ul {
         font-size: 15px;
     }
@@ -50,8 +39,15 @@ header {
     }
 
     a {
-        color: #7e7e7e; 
+        color: #808080; 
         text-decoration: none; 
+        &:hover {
+            color: #000000;
+        }
+        
+        &:active {
+            color: #e93737;
+        }
     }
 }
 
@@ -65,11 +61,12 @@ header {
 }
 
 .busca {
-    background-color: #dcdcdc;
+    background-color: #ebebeb;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 10px;
     width: 230px;
+    float: left;
 }
 
 .busca h2, 
@@ -81,10 +78,6 @@ header {
     width: 170px;
 }
 
-.busca {
-    float: left;
-}
-
 .destaque {
     margin-top: 10px;
 }
@@ -94,7 +87,7 @@ header {
     padding-bottom: 10px;
     float: left;
     clear: left;
-    background-color: #dcdcdc;
+    background-color: #ebebeb;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 10px;
@@ -234,7 +227,7 @@ header {
         
         &:hover {
             background-color: #393939;
-            box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9); 
+            box-shadow: 1px 0 20px rgba(104, 16, 204, 0.9); 
 
             &::after {
                 border-top-color: #393939;
@@ -245,7 +238,7 @@ header {
 
 .painel-aberto {
     li {
-        &:nth-child(n+7) {
+        &:nth-child(n+3) {
             display: inline-block;
         }
     }
@@ -253,14 +246,14 @@ header {
 
 .novidades {
     float: left;
-    background-color: #F5DCDC;
-    background: linear-gradient(#f5dcdc, #bebef4);
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(#fffc00, #ffffff);
 }
 
 .mais-vendidos {
     float: right;
-    background-color: #DCDCF5;
-    background: linear-gradient(#dcdcf5, #f4bebe);
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(#acb6e5, #86fde8);
 }
 
 .social a {
@@ -273,19 +266,19 @@ header {
 }
 
 .social a[href*="facebook.com"] {
-    background-image: url(img/facebook.png);
+    background-image: url(../img/facebook.png);
 }
 
 .social a[href*="twitter.com"] {
-    background-image: url(img/twitter.png);
+    background-image: url(../img/twitter.png);
 }
 
 .social a[href*="plus.google.com"] {
-    background-image: url(img/googleplus.png);
+    background-image: url(../img/googleplus.png);
 }
 
 footer {
-    background-image: url(img/fundo-rodape.png);
+    background-image: url(../img/fundo-rodape.png);
     padding: 20px 0;
     clear: both;
 }
@@ -307,7 +300,7 @@ footer .container {
 
 .busca button {
     /* adicionando imagem */
-    background-image: url(img/busca.png);
+    background-image: url(../img/busca.png);
     background-repeat: no-repeat;
     border: none;
     /*tamanho da imagem */
@@ -355,20 +348,23 @@ footer .container {
     }
 
     header h1 {
-        text-align: center;
+        text-align: left;
+        img {
+            max-width: 50%;
+        }
     }
-
-    header h1 img {
-        max-width: 50%;
-    }
-
-    .sacola{
-        display: none
+    .menu-opcoes {
+        text-align: left;
+        li {
+            margin: 12px;
+        }
     }
 
     .menu-departamentos,
     .busca {
-        display: none;
+        display: block; 
+        margin-right: 1%;
+        width: 30%;
     }
  
     .banner-destaques img {
@@ -378,14 +374,12 @@ footer .container {
 
     .painel {
         width: auto;
-    }
-
-    .painel li {
-        width: 30%;
-    }
-
-    .painel img{
-        width: 100%;
+        li {
+            width: 30%;
+        }
+        img {
+            width: 100%;
+        }
     }
 
     .pause {
@@ -400,10 +394,17 @@ footer .container {
         .menu-departamentos {
             padding-bottom: 10px; 
             margin-bottom: 10px;
+            nav > ul {
+                column-count: 1;
+            }
         }
+    }
 
-        .menu-departamentos nav > ul {
-            column-count: 2;
+    .menu-opcoes {
+        text-align: center;
+        margin: 0 auto;
+        li {
+            margin: 7px;
         }
     }
 
@@ -413,9 +414,13 @@ footer .container {
         }
         
         .menu-opcoes {
+            text-align: right;
+            margin: 0 auto;
             position: absolute;
+            li {
+                margin: 12px;
+            }
         }
-
         .sacola {
             display: block;
         }
@@ -424,8 +429,7 @@ footer .container {
             width: 15%;
         }
 
-        .busca,
-        .menu-departamentos nav > ul {
+        .busca {
             margin-right: 1%;
             width: 30%;
         }
@@ -435,7 +439,8 @@ footer .container {
         }
         
         .banner-destaques img {
-            width: 69%;
+            width: 60%;    
+            position: absolute;        
         }
     }
 }
