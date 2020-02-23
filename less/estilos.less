@@ -301,12 +301,15 @@ footer {
         width: 96%;
     }
 
-    header h1 {
-        text-align: left;
-        img {
-            max-width: 50%;
+    header {
+        h1 {
+            text-align: left;
+            img {
+                max-width: 50%;
+            }
         }
     }
+
     .menu-opcoes {
         text-align: left;
         li {
@@ -340,40 +343,6 @@ footer {
         }
     }
 
-    @media (max-width: 480px) {
-        header h1 {
-            margin: 5px 0;
-            text-align: center;
-        }
-
-        .menu-departamentos {
-            padding-bottom: 20px; 
-            margin-bottom: 10px;
-            width: 100%;
-            nav > ul {
-                column-count: 1;
-            }
-        }
-        
-        .busca {
-            display: none;
-        }
-
-        .sacola {
-            display: none;  
-        }
-
-        .menu-opcoes {
-            text-align: center;
-            li {
-                margin: 7px;
-            }
-        }
-        .banner-destaques {
-            clear: both;
-        }
-    }
-
     @media (min-width: 720px) {
         header h1 {
             text-align: left;
@@ -383,6 +352,7 @@ footer {
             text-align: right;
             margin: 0 auto;
             position: absolute;
+
             li {
                 margin: 12px;
             }
@@ -402,6 +372,41 @@ footer {
 
         .menu-departamentos nav > ul {
             column-count: 1;
+        }
+    }
+
+    @media (min-width: 481px) {
+        .menu-opcoes {
+            text-align: right;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header h1 {
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .menu-departamentos {
+            display: none;
+        }
+        
+        .busca {
+            display: none;
+        }
+
+        .sacola {
+            display: none;  
+        }
+
+        .menu-opcoes {
+            text-align: center;
+            li {
+                margin: 7px;
+            }
+        }
+        .banner-destaques {
+            clear: both;
         }
     }
 }
