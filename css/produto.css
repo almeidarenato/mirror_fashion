@@ -83,7 +83,7 @@
 }
 
 .comprar {
-    background: #91bd3c;
+    background: #37ee6e;
     border: none;
     color: #333;
     font-size: 1.4em;
@@ -109,10 +109,11 @@
 
 .comprar {
     cursor: pointer;
+    text-align: center;
 }
 .textBuy {
     text-decoration: none;
-    color: rgb(95, 95, 95);
+    color: rgb(255, 255, 255);
 }
 
 .tamanhos output {
@@ -128,11 +129,12 @@
 
 .detalhes {
     padding: 2em 0;
+    width: 35%;
 }
 
 .detalhes h2 {
     font-size: 1.5em;
-    line-height: 2;
+    text-align: center;
 }
 
 .detalhes  p {
@@ -144,10 +146,11 @@
 .detalhes table {
     border-spacing: 0.2em;
     border-collapse: separate;
+    text-align: center;
 }
 
 .detalhes thead {
-    background-color: #999999;
+    background-color: #b9b9b9;
 }
 
 .detalhes thead th {
@@ -171,7 +174,8 @@ detalhes td {
 }
 
 .cores label img {
-    border: 2px solid #ccc;
+    box-shadow:  0px 0px 1em 5px rgb(219, 219, 219);
+    border-radius: 2%;
 }
 
 @media (min-width: 500px) {
