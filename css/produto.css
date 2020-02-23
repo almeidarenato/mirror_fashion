@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Poppins&display=swap');
+
 .cores label::after {
     content: "";
     display: block;
@@ -74,11 +76,13 @@
     font-size: 1.2em;
     font-style: italic;
     margin-bottom: 1em;
+    font-family: 'Poppins';
 }
 
 .produto legend {
     display: block;
     font: bold 0.9em/2.5 Arial;
+    font-family: 'Alegreya Sans SC';
     text-transform: uppercase;
 }
 
@@ -91,7 +95,9 @@
     box-shadow: 0 1px 3px #777;
     display: block;
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin-top: 60px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .cores label::after {
@@ -107,13 +113,10 @@
     cursor: pointer;
 }
 
-.comprar {
-    cursor: pointer;
-    text-align: center;
-}
 .textBuy {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: 'Alegreya Sans SC';
 }
 
 .tamanhos output {
@@ -129,12 +132,12 @@
 
 .detalhes {
     padding: 2em 0;
-    width: 35%;
 }
 
 .detalhes h2 {
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
+    font-family: 'Alegreya Sans SC';
 }
 
 .detalhes  p {
@@ -144,9 +147,10 @@
 }
 
 .detalhes table {
-    border-spacing: 0.2em;
+    border-spacing: 0.5em;
     border-collapse: separate;
     text-align: center;
+    background-color: #ececec;
 }
 
 .detalhes thead {
@@ -229,5 +233,16 @@ detalhes td {
         margin: 1em 0;
         min-width: 240px;
         width: 45%;
+    }
+}
+
+@media (min-width: 319px) {
+    .detalhes {
+        width: auto;
+    }
+
+    .detalhes table {
+        margin: auto;
+        width: 100%;
     }
 }
