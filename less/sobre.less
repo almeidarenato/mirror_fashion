@@ -1,0 +1,146 @@
+body {
+    color: #333333;
+    font-family: ' Lucida	Sans	Unicode",	"Lucida	Grande",	sans-serif;';
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;  
+    font-family: 'Poppins';
+    &::after {
+        content: '';
+        width: 140px;
+        height: 4px;
+        background: currentColor;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+h2 {
+    border-bottom: 2px solid #333333;
+    padding-top: 30px;
+}
+
+p {
+    padding: 0 45px;
+    text-indent: 15px;
+    &::first-letter {
+        font-weight: bold;
+    }    
+}
+
+:not(p) + p::first-line {
+    font-variant: small-caps;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+figure {
+    background-color: #F2EDED;
+    border: 2px	solid	#ccc;
+    text-align:	center;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    font-style:	italic;
+    margin-top: 10px;
+}
+
+.centro-distribuicao{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+footer {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+    img {
+        margin-right: 30px;
+        vertical-align: middle;
+        width: 94px;
+    }
+}
+
+.familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.sacola {
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    font-size: 14px;
+    font-family: 'Poppins' ;
+    padding-right: 45px;
+    text-align: right;
+    width: 140px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    position: static;
+    text-align: right;
+    margin-right: 0;
+    width: 100%;
+    font-family: 'Poppins' ;
+    
+    ul {
+        font-size: 15px;
+    }
+    
+    li {
+        display: inline-block;
+        margin: 5px;    
+    }
+
+    a {
+        color: #808080; 
+        text-decoration: none; 
+        &:hover {
+            color:#e93737;
+        }
+
+        &:active {
+            color: #e93737;
+        }
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+header {
+    position: relative;
+}
+
+.google-maps {
+    float: center;
+    width: 100%;
+    margin: auto;
+
+}
+
+.youtube {
+    width: 100%;
+}
