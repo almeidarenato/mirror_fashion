@@ -2,7 +2,58 @@
 
 body {
     color: #333333;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Poppins' , sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: black;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    .logo {
+        color: #ffffff;
+        height: 50px;
+        line-height: 50px; 
+        font-size: 24px;
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav {
+        float: right;
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    height: 50px;
+                    line-height: 50px;
+                    color: #ffffff;
+                    padding: 0 20px; 
+                    text-decoration: none;
+                    display: block;
+                    &:hover {
+                        color: #ffffff;
+                        background: rgb(112, 203, 255);
+                    }
+                }
+            }
+        }
+    }
+    .menu-navegacao {
+        color: #ffffff;
+        float: right;
+        line-height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+    }
 }
 
 .container {
@@ -13,93 +64,28 @@ body {
 
 
 footer {
-    background-image: url(../img/fundo-rodape.png);
     padding: 20px 0;
     clear: both;
-}
-
-.sacola {
-    background-image: url(../img/sacola.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    font-size: 14px;
-    font-family: 'Poppins' ;
-    padding-right: 45px;
-    text-align: right;
-    width: 140px;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.menu-opcoes {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 15px;
-    position: static;
-    text-align: right;
-    margin-right: 0;
-    width: 100%;
-    font-family: 'Poppins';
-
-    ul {
-        font-size: 15px;
+    img {
+        margin-right: 30px;
+        vertical-align: middle;
+        width: 120px;
     }
-    
-    li {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    a {
-        color: #808080; 
-        text-decoration: none; 
-        &:hover {
-            color:#e93737;
+    p {
+        font-size: 12px;
+        text-align: center;
+        color: rgba(221, 221, 221, 0.8);
+        a {
+            text-decoration: none;
+            color: currentColor;
         }
-
-        &:active {
-            color: #e93737;
-        }
-    }
-}
-
-.busca {
-    background-color: #ebebeb;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    width: 230px;
-    float: left;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
-    h2,
-    form {
-    margin: 10px;
-    }
-
-    input[type=search] {
-        width: 170px;
-    }
-
-    button {
-        background-image: url(../img/busca.png);
-        background-repeat: no-repeat;
-        border: none;
-        width: 20px;
-        height: 20px;
-        /*imagem replacement */
-        text-indent: -9999px;
     }
 }
 
 .destaque {
-    margin-top: 10px;
+    margin-top: 50px;
     position: relative;
+    padding-top: 20px;
 }
 
 .menu-departamentos {
@@ -107,27 +93,21 @@ footer {
     padding-bottom: 10px;
     float: left;
     clear: left;
-    background-color: #ececec;
+    background-color: white;
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 10px;
     width: 230px;
-
+    border-radius: 4px;
+    box-shadow: 0.2px 0.2px 1px 1px rgb(112, 203, 255);
     li {
-        background-color: white;
         margin-bottom:1px;
         padding: 5px 10px;
         &:hover ul {
             display: block;
         }
-
         ul {
             display: none;
-
-            li {
-                background-color: #ffffff;
-            }
-
             a::before {
                 content: '👉'; 
                 padding-right: 5px;
@@ -135,19 +115,18 @@ footer {
             }
         }
     }
-
     h2 {
         margin: 10px;
+        color: rgb(112, 203, 255);
     }
-
     a {
-        color: #747474; 
+        color: black; 
         text-decoration: none;
         &:hover {
-            color: #838383;
+            color: rgb(112, 203, 255);
         }
         &:active {
-            color: #3f3f3f;
+            color: red;
         }
     }
 }
@@ -156,46 +135,49 @@ footer {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 3px rgb(216, 216, 216);
-
     ol {
         text-align: center;
-    }
-
-    li {
-        display: inline-block;
-        vertical-align: top;
-        width: 140px;
-        margin: 2px;
-        padding-bottom: 10px;
-        transition: 0.7s ease-out;
-        font-family: 'Poppins', ;
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 5px #333;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            width: 140px;
+            margin: 2px;
+            padding-bottom: 10px;
+            transition: 0.7s ease-out;
+            font-family: 'Poppins', ;
+            &:hover {
+                background-color: rgba(221, 221, 221, 0.8);
+                box-shadow: 0 0 5px rgb(97, 97, 97);
+            }
+            &:nth-child(n+7) {
+                display: none;
+            }
+            img {
+                width: 140px;
+            }
         }
-        &:nth-child(n+7) {
-            display: none;
-        }
     }
-
     h2 {
         font-size: 24px;
-        font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 10px;
-        // text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
         font-family: 'Poppins', ;
+        text-align: center;
+        &::after {
+            content: '';
+            width: 220px;
+            height: 3px;
+            background: currentColor;
+            display: block;
+            margin: 10px auto;
+        }
     }
-
     a {
         color: #333;
         font-size: 14px;
         text-align: center;
         text-decoration: none;
     }
-
     button {
         /* posicionamento */
         float: right;
@@ -205,7 +187,7 @@ footer {
         background-color: #333;
         border: 0;  
         border-radius: 4px;
-        box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+        box-shadow: 1px 1px 5px 3px #d0d0d0;
         color: white;
         font-size: 1em;
         text-decoration: none;
@@ -232,10 +214,9 @@ footer {
             /* animação */
             transition: 0.3s;
         }
-
         &:hover {
             background-color: #393939;
-            box-shadow: 1px 0 20px rgba(104, 16, 204, 0.9); 
+            box-shadow: 1px 0 20px rgba(192, 192, 192, 0.9); 
             &::after {
                 border-top-color: #393939;
             }
@@ -243,29 +224,32 @@ footer {
     }
 }
 
-.painel-aberto li:nth-child(n+3) {
+.painel-aberto li:nth-child(n+7) {
     display: inline-block;
 }
 
 .novidades {
     float: left;
     background-color: rgb(255, 255, 255);
-    background: linear-gradient(#fffc00, #ffffff);
-    h2::before {
-        content: '🤘';
-        padding-right: 5px;
-    }
+    background: border-box white;
+    // h2 {
+    //     &::before {
+    //         content: '🤘';
+    //         padding-right: 5px;
+    //     }
+    // }
 }
 
 .mais-vendidos {
     float: right;
-    background-color: rgb(255, 255, 255);
-    background: linear-gradient(#acb6e5, #86fde8);
-    
-    h2::before {
-        content: '🔥';
-        padding-right: 5px;
-    }
+    background-color: rgb(128, 127, 127);
+    background: border-box white;
+    // h2 {
+    //     &::before {
+    //         content: '🔥';
+    //         padding-right: 5px;
+    //     }
+    // }
 }
 
 .social {
@@ -294,22 +278,45 @@ footer {
     background-image: url(../img/twitter.png);
 }
 
-.social a[href*="plus.google.com"] {
+.social a[href*="instagram.com"] {
     background-image: url(../img/instagram.png);
+}
+
+// mixins
+.newheader {
+    header {
+        padding: 0 20px;
+        nav {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 50px);
+            background: #333333;
+            top: 50px;
+            left: -100%;
+            transition: 0.5s;
+            ul {
+                display: block;
+                text-align: center;
+                li {
+                    a {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+        .active {
+            left: 0;
+            z-index: 2;
+        }
+        .menu-navegacao {
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 939px) {
     .container {
         width: 96%;
-    }
-
-    header {
-        h1 {
-            text-align: left;
-            img {
-                max-width: 50%;
-            }
-        }
     }
 
     .menu-opcoes {
@@ -319,13 +326,12 @@ footer {
         }
     }
 
-    .menu-departamentos,
-    .busca {
+    .menu-departamentos {
         display: block; 
         margin-right: 1%;
         width: 30%;
     }
- 
+
     .banner-destaques img {
         margin-right: 0;
         width: 100%;	
@@ -341,35 +347,16 @@ footer {
             width: 30%;
         }
         img {
-            width: 100%;
+            width: 40%;
         }
     }
 
-    @media (min-width: 720px) {
-        header h1 {
-            text-align: left;
-        }
-        
-        .menu-opcoes {
-            text-align: right;
-            margin: 0 auto;
-            position: absolute;
+    @media (max-width: 780px) {
 
-            li {
-                margin: 12px;
-            }
-        }
-        .sacola {
-            display: block;
-        }
+        .newheader;
 
         .painel li {
             width: 15%;
-        }
-
-        .busca {
-            margin-right: 1%;
-            width: 30%;
         }
 
         .menu-departamentos nav > ul {
@@ -377,38 +364,21 @@ footer {
         }
     }
 
-    @media (min-width: 481px) {
-        .menu-opcoes {
-            text-align: right;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        header h1 {
-            margin: 5px 0;
-            text-align: center;
-        }
+    @media (max-width: 480px) {   
+
+        .newheader;
 
         .menu-departamentos {
             display: none;
         }
-        
-        .busca {
-            display: none;
-        }
 
-        .sacola {
-            display: none;  
-        }
-
-        .menu-opcoes {
-            text-align: center;
-            li {
-                margin: 7px;
-            }
-        }
         .banner-destaques {
             clear: both;
+        }
+        footer {
+            p {
+            padding-top: 20px;
+            }
         }
     }
 }

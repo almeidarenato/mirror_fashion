@@ -1,5 +1,5 @@
 
-var banners = ["img/destaque-home.png", "img/destaque-home-2.png"];
+var banners = ["https://media.gettyimages.com/vectors/black-friday-design-for-advertising-banners-leaflets-and-flyers-vector-id1060912976?k=6&m=1060912976&s=612x612&w=0&h=kZpPDpgo-34V2Sxrun9jQFuRX7MaxP4xFj_M8qWRn0w=", "https://media.gettyimages.com/vectors/everyday-low-price-sale-tag-vector-id610584574?k=6&m=610584574&s=612x612&w=0&h=C9r2Rbs3IqBD2yzWrv7wlhLlSmtMpZKFLVnn1cZ8YhE="];
 var bannerAtual = 0;
 
 function trocaBanner() {
@@ -15,7 +15,7 @@ controle.onclick = function() {
         cleanInterval(timer);
         controle.className = 'play';
     } else {
-        timer = setInterval(trocaBanner, 5000);
+        timer = setInterval(trocaBanner, 1000);
         controle.className = 'pause';
     }
     

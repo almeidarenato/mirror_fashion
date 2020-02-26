@@ -5,3 +5,5 @@ function newFunction() {
         $(this).parent().toggleClass('painel-aberto');
        });
 }
+
+

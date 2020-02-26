@@ -7,22 +7,20 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet/less" href="less/estilos.less">
         <link rel="stylesheet/less" href="less/produto.less">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header class="container">
-            <h1><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1>
-            <p class="sacola">
-                Nenhum item na sacola de compras.
-            </p>
-            <nav class="menu-opcoes">
+        <header>
+            <div class="logo">MF</div>
+            <nav class="active">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="produto.html">Produto</a></li>
                     <li><a href="checkout.html">Comprar</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
+            <div class="menu-navegacao"><i class="fa fa-bars" aria-hidden="true"></i></div>
         </header>
         <div class="produto-back">
             <div class="container">
@@ -32,17 +30,17 @@
                     <form action="checkout.html" method="POST">
                         <fieldset class="cores">
                             <legend>Escolha a cor:</legend>
-                            <input type="radio" name="cor" value="verde" id="verde" checked>
-                            <label for="verde">
-                                <img src="img/produtos/foto3-verde.png" alt="Produto na cor verde">
+                            <input type="radio" name="cor" value="prata" id="prata" checked>
+                            <label for="prata">
+                                <img src="https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/82941585_2718729995022018_5333203058682913889_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=6yYTUQ7jL1MAX_Qzkq8&oh=67725096e84c555c4e74c62358486745&oe=5E8CB0F5" alt="Produto na cor prata">
                             </label>
                             <input type="radio" name="cor" value="rosa" id="rosa">
                             <label for="rosa">
-                                <img src="img/produtos/foto3-rosa.png" alt="Produto na cor rosa">
+                                <img src="https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/81990482_3271832749512659_8142914240105448861_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=DbHiYOhxZZwAX88QLHX&oh=4f901eb1530c517791304d9ba7932590&oe=5E84B211" alt="Produto na cor rosa">
                             </label>
-                            <input type="radio" name="cor" value="azul" id="azul">
-                            <label for="azul">
-                                <img src="img/produtos/foto3-azul.png" alt="Produto na cor azul">
+                            <input type="radio" name="cor" value="laranja" id="laranja">
+                            <label for="laranja">
+                                <img src="https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/69397613_732023800576574_3185858187433465317_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=3_fkp7YikAUAX9mHuFp&oh=1a210caa7457b23b62ecf1396fb1f778&oe=5E8C1319" alt="Produto na cor laranja">
                             </label>
                                 <buttom class="comprar">
                                     <a  class="textBuy" href="checkout.html">Comprar</a>
@@ -90,16 +88,19 @@
             </div>
             <footer>
                 <div class="container">
-                    <img src="img/logo-rodape.png" alt="Logo da Mirror Fashion">
+                    <img src="img/logo.png" alt="Logo da Mirror Fashion">
+                    <p>&copy; Copyright Mirror Fashion. Devolvido por <a href="www.github.com/fariasmateuss/">Mateus V. Farias</a></p>
                     <ul class="social">
-                        <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
-                        <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
-                        <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+                        <li><a href="http://facebook.com/#">Facebook</a></li>
+                        <li><a href="http://twitter.com/#">Twitter</a></li>
+                        <li><a href="http://instagram.com/#">Google+</a></li>
                     </ul>
                 </div>
             </footer>
         </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/produto.js"></script>
+        <script type="text/javascript" src="js/menu-navegacao.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     </body>
 </html>

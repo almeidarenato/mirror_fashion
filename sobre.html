@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width">
         <title>Sobre a Mirror Fashion</title>
         <link rel="stylesheet/less" href="less/sobre.less">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header class="container">
-            <h6><img src="img/logo.png" alt="Logo Mirror Fashion"></h6>
-            <p class="sacola">Nenhum item na sacola de compras.</p>
-            <nav class="menu-opcoes">
+        <header>
+            <div class="logo">LOGO</div>
+            <nav class="active">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="produto.html">Produto</a></li>
                     <li><a href="checkout.html">Comprar</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#">Ajuda</a></li>
                 </ul>
             </nav>
+            <div class="menu-navegacao"><i class="fa fa-bars" aria-hidden="true"></i></div>
         </header>
         <section>  
             <h1>Mirror Fashion</h1>
@@ -95,8 +95,10 @@
         </section>
         <footer>
             <img src="img/logo.png">
-            &copy; Copyright Mirror Fashion. Devolvido por <a href="www.github.com/fariasmateuss/">Mateus V. Farias</a>
+            <p>&copy; Copyright Mirror Fashion. Devolvido por <a href="www.github.com/fariasmateuss/">Mateus V. Farias</a></p>
         </footer>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/menu-navegacao.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
     </body>
 </html>

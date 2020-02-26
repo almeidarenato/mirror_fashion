@@ -8,10 +8,41 @@ body {
     width: 940px;
 }
 
+
+header {
+    padding: 0 20px;
+    nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        ul {
+            display: block;
+            text-align: center;
+            li {
+                a {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    .active {
+        left: 0;
+        z-index: 2;
+    }
+    .menu-navegacao {
+        display: block;
+    }
+}
+
 h1 {
     text-align: center;
     padding: 10px;  
     font-family: 'Poppins';
+    padding-top: 50px;
     &::after {
         content: '';
         width: 140px;
@@ -71,7 +102,6 @@ footer {
         vertical-align: middle;
         width: 94px;
     }
-    
     a {
         text-decoration: none;
         color: black;
@@ -109,23 +139,19 @@ footer {
     margin-right: 0;
     width: 100%;
     font-family: 'Poppins' ;
-    
     ul {
         font-size: 15px;
     }
-    
     li {
         display: inline-block;
         margin: 5px;    
     }
-
     a {
         color: #808080; 
         text-decoration: none; 
         &:hover {
             color:#e93737;
         }
-
         &:active {
             color: #e93737;
         }
@@ -134,11 +160,7 @@ footer {
 
 .container {
     margin: 0 auto;
-    width: 940px;
-}
-
-header {
-    position: relative;
+    width: auto;
 }
 
 .google-maps {
@@ -150,4 +172,48 @@ header {
 
 .youtube {
     width: 100%;
+}
+
+@media (max-width: 780px) {
+    html {
+        width: fit-content;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    header {
+        padding: 0 20px;
+        position: fixed;
+        nav {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 50px);
+            background: #333333;
+            top: 50px;
+            left: -100%;
+            transition: 0.5s;
+            ul {
+                display: block;
+                text-align: center;
+                li {
+                    a {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+                    .active {
+                        color: #ffffff;
+                        background: #2196f3;
+                    }
+                }
+            }
+        }
+        .active {
+            left: 0;
+            z-index: 2;
+        }
+        .menu-toggle {
+            display: block;
+        }
+    }
 }

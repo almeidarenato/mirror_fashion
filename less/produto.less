@@ -3,7 +3,6 @@
 .cores {
     position: relative;
     padding-top: 80px;
-
     label {
         &::after {
             content: "";
@@ -22,7 +21,6 @@
         &:hover::after {
             border: 6px solid rgba(0,0,0,0.1);
         }
-
         img {
             display: block;
             max-width: 100%;
@@ -30,34 +28,27 @@
             border-radius: 2%;
         }
     }
-
-    label[for=verde]::after {
-        background-color: #33CC66;
+    label[for=prata]::after {
+        background-color: rgb(216, 216, 216);
         left: 0;
     }
-
     label[for=rosa]::after {
-        background-color: #FF6666;
+        background-color: rgb(255, 102, 204);
         left: 60px;
     }
-
-    label[for=azul]::after {
-        background-color: #6666FF;
+    label[for=laranja]::after {
+        background-color: #FF6666;
         left: 120px;
     }
-    
     input[type=radio] {
         display: none;
     }
-
     input:checked + label::after {
         border: 6px solid rgba(0,0,0,0.3);
     }
-    
     input:not(:checked) + label img {
         display: none;
     }
-    
 }
 
 .produto {
@@ -68,14 +59,12 @@
         font-size: 1.8em;
         font-weight: bold;
     }
-
     p {
         font-size: 1.2em;
         font-style: italic;
         margin-bottom: 1em;
         font-family: 'Poppins';
     }
-
     legend {
         display: block;
         font: bold 0.9em/2.5 Arial;
@@ -85,9 +74,9 @@
 }
 
 .produto-back {
-    background-color: #f2f2f2;
-    margin-top: 1em;
-    border-top: 2px solid #ccc;
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-top: 2px solid rgb(255, 255, 255);
 }
 
 .comprar {
@@ -123,34 +112,30 @@
 
 .detalhes {
     padding: 2em 0;
-
     h2 {
         font-size: 1.5em;
         text-align: left;
         font-family: 'Alegreya Sans SC';
     }
-
     p {
         margin: 1em 0;
         font-size: 1em;
         line-height: 1.5;
     }
-
     table {
         border-spacing: 0.5em;
         border-collapse: separate;
         text-align: center;
-        background-color: #ececec;
-
+        margin: 0 auto;
+        width: 100%;
+        background-color: rgba(154, 218, 255, 0.315);
         thead {
-            background-color: #b9b9b9;
-            
+            background-color: rgb(154, 218, 255);
             th {
                 font-weight: bold;
                 padding: 0.3em 1em;
                 text-align: center;    
             }
-            
             td {
                 padding: 0.3em;
             }
@@ -182,14 +167,12 @@
     .cores {
         position: static;
         padding: 0;
-
         label {
             &::after {
                 position: static;
                 float: left;
                 margin-right: 10px;
             }
-
             img {
                 position: absolute;
                 top: 0;
@@ -201,13 +184,18 @@
     }
 }
 
-@media (min-width: 319px) {
+@media (max-width: 414px) {
     .detalhes {
         width: auto;
-        
         table {
             margin: auto;
             width: 100%;
+        }
+    }
+
+    footer {
+        p {
+            padding-top: 20px;
         }
     }
 }
